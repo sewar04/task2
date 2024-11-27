@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 23/11</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, td {
+            border: 1px solid black;
+        }
+        td {
+            height: 40px;
+            text-align: center;
+        }
+        form {
+            margin-top: 20px;
+        }
+        fieldset {
+            width: 50%;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin: 5px 0 5px;
+        }
+         textarea, button {
+            width: 100%;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Homework</h1>
+    <h2>1. Links Example</h2>
+    <a href="https://www.google.com" target="_blank">Visit Google</a><br>
+    <a href="#table-section">Go to Table</a><br>
+    <a href="mailto:example@example.com">Send an Email</a><br>
+    <h2 id="table-section">2. HTML Table</h2>
+    <table>
+        <tr>
+            <td colspan="7"></td>
+        </tr>
+        <tr>
+            <td rowspan="4"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td rowspan="2" colspan="3"></td>
+            <td></td>
+        </tr>
+        <tr>
+           <td></td> 
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="7"></td>
+        </tr>
+    </table>
+
+    <h2>3. Basic Form design using HTML </h2>
+    <form>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name">
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name">
+            <label>Gender:</label>
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="male">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+            <label for="address">Address:</label>
+            <textarea placeholder="enter your address" id="address" name="address" rows="4" cols="50"></textarea>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>
